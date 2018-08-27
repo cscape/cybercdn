@@ -1,0 +1,23 @@
+{
+  "name": "cybercdn",
+  "version": "1.0.0",
+  "description": "We don't know what we're doing here.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ciolt/cybercdn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ciolt/cybercdn/issues"
+  },
+  "homepage": "https://github.com/ciolt/cybercdn#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

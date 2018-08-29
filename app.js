@@ -22,7 +22,7 @@ app.use((req, res, next) => {
   if (req.hostname === CENTRAL_DOMAIN) {
     const hosts = DOMAINS_LIST.split(',')
     const host = hosts[Math.floor(Math.random() * hosts.length)]
-    return res.redirect(genBeacon(host))
+    return res.header('Cache-Control', 'no-cache').redirect(genBeacon(host))
   } else next()
 })
 
@@ -59,12 +59,15 @@ app.get('/beacon', (req, res) => {
     setTimeout(() => {
       delete authCodes[authCode]
     }, (timestamp + authTimeout) - range[1])
-    return res.status(200).json({
-      beacon: pjs.version,
-      p: timestamp,
-      d: Date.now(),
-      offset: Date.now() - timestamp
-    })
+    return res
+      .status(200)
+      .header('Cache-Control', 'private')
+      .json({
+        beacon: pjs.version,
+        p: timestamp,
+        d: Date.now(),
+        offset: Date.now() - timestamp
+      })
   } else {
     return res.status(404).send()
   }

@@ -1,7 +1,7 @@
 {
   "name": "cybercdn",
-  "version": "1.0.0",
-  "description": "We don't know what we're doing here.",
+  "version": "0.9.0",
+  "description": "The Cyberscape Wide-Area Network (CWAN)",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

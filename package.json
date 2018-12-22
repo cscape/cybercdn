@@ -2,10 +2,10 @@
   "name": "cybercdn",
   "version": "0.9.0",
   "description": "The Cyberscape Wide-Area Network (CWAN)",
-  "main": "app.js",
+  "main": "mirror.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node mirror.js"
   },
   "repository": {
     "type": "git",

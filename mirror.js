@@ -17,7 +17,6 @@ app.use(function(req, res, next) {
 })
 
 app.use('/', (req, res) => {
-  res.header("Content-Security-Policy", "default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self';")
   res.header("X-Hello-From", "Miami")
 })
 

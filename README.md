@@ -1,2 +1,7 @@
 # cybercdn
-We don't know what we're doing here.
+
+Simple server that redirects to the Cyberscape website.
+
+## License
+
+[MIT](LICENSE) © [Cyberscape](https://cyberscape.co/).

@@ -1,22 +1,18 @@
 {
   "name": "cybercdn",
-  "version": "0.9.0",
-  "description": "The Cyberscape Wide-Area Network (CWAN)",
+  "version": "1.1.2",
+  "description": "Server that redirects to the Cyberscape website",
   "main": "mirror.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node mirror.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ciolt/cybercdn.git"
+    "url": "git+https://github.com/cscape/cybercdn.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ciolt/cybercdn/issues"
-  },
-  "homepage": "https://github.com/ciolt/cybercdn#readme",
+  "author": "Cyberscape",
+  "license": "MIT",
+  "homepage": "https://github.com/cscape/cybercdn#readme",
   "dependencies": {
     "express": "^4.16.3"
   }
